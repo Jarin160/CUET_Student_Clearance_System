@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Register </title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+
+<body>
+	<div align="center">
+		<div align="center" class="wrapper">
+			<div>
+				<h2 class="word">Register</h2>
+			</div>
+			<form action="{{ url_for('register') }}" method="post">
+				<div class="msg">{{ msg }}</div>
+				<div class="input-field">
+					<input id="id" name="id" type="text" required>
+					<label>Student ID</label>
+				</div>
+				<div class="input-field">
+					<input id="username" name="username" type="text" required>
+					<label>Name</label>
+				</div>
+				<div class="input-field">
+					<input id="dept" name="dept" type="text" required>
+					<label>Department</label>
+				</div>
+
+				<div class="input-field">
+					<input id="sessions" name="sessions" type="text" required>
+					<label>Session</label>
+				</div>
+
+				<div class="input-field">
+					<input id="email" name="email" type="text" required>
+					<label>Email</label>
+				</div>
+				<div class="input-field">
+					<input id="password" name="password" type="password" required>
+					<label>Password</label>
+				</div>
+				<input type="submit" class="button" value="Sign Up"></br>
+				<div class="register">
+					<p>Already have an account? <a href="{{url_for('login')}}"> Login</a>
+					</p>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert HTML Table to PDF</title>
+</head>
+<body>
+    <h1>HTML Table to PDF Converter</h1>
+    <form action="{{ url_for('generate_pdf') }}" method="POST">
+        <textarea name="table_html" rows="10" cols="50" placeholder="Enter your HTML table here"></textarea><br>
+        <button type="submit">Convert to PDF</button>
+    </form>
+</body>
+</html>

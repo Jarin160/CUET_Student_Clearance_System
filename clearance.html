@@ -1,0 +1,49 @@
+{% extends "nav.html" %}
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='pvc.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="head">
+        <h2>Application</h2>
+    </div>
+    <form action="">
+        <fieldset>
+            <legend><img src="{{url_for('static', filename='cuet-logo.jpg') }}" alt=""></legend>
+            <h3>Application for Academic Transcript</h3>
+            <div class="row">
+                <label for="img"> Upload Your Photo (.jpg/.png): </label><br>
+                <input type="file" id="img" name="img" accept=".jpg,.jpeg,.png" required>
+            </div>
+            <div class="row">
+                <label for="name"> Name of Student: </label><br>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="col1">
+                        <label for="id"> Student ID: </label><br>
+                        <input type="number" id="id" name="id" required>
+                    </div>
+                    <div class="col1">
+                        <label for="session"> Session: </label><br>
+                        <input type="number" id="session" name="session" required>
+                    </div>
+                    <div class="col1">
+                        <label for="dept"> Name of Department: </label><br>
+                        <input type="text" id="dept" name="dept" required>
+                    </div>
+                    <div class="col1">
+                        <label for="end"> Date of Last examination: </label><br>
+                        <input type="month" id="end" name="end" required><br><br>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="submit"> Submit </button><br>
+            </div>
+        </fieldset>
+    </form>
+</div>
+{% endblock %}

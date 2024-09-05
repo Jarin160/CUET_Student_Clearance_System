@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 10px;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("cuet-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 600px;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.wrapper i {
+  color: rgb(202, 229, 251);
+  font-size: 120px;
+  margin-bottom: 0;
+  padding: 0px;
+}
+
+h1 {
+    color: aliceblue;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding-top: 0;
+}
+
+nav a{
+  text-decoration: none;
+  color: rgb(3, 20, 34);
+}
+
+button {
+    width: 30%;
+    padding: 10px 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgb(201, 219, 234);
+    border: 1px solid rgb(201, 219, 234);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.5);;
+}
+

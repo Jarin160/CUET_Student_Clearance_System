@@ -1,0 +1,61 @@
+{% extends "nav.html" %}
+{% block body %}
+
+<section class="dashboard">
+  <div class="container">
+    <h3>STUDENT NAME: {{username}}</h3>
+    <h3>DEPARTMENT: {{dept}}</h3>
+    <div class="row">
+      <div class="table">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Level Term</th>
+              <th scope="col">Issue Date</th>
+            </tr>
+          </thead>
+            
+            <tbody class="table-group-divider">
+              {% for row in results %}
+              <tr>
+                <td>Level1 Term1 </td>
+                <td>{{ row.Level1_Term1 }}</td>
+              </tr>
+              <tr>
+                <td>Level1 Term2 </td>
+                <td>{{ row.Level1_Term2 }}</td>
+              </tr>
+              <tr>
+                <td>Level2 Term1 </td>
+                <td>{{ row.Level2_Term1 }}</td>
+              </tr>
+              <tr>
+                <td>Level2 Term2 </td>
+                <td>{{ row.Level2_Term2 }}</td>
+              </tr>
+              <tr>
+                <td>Level3 Term1 </td>
+                <td>{{ row.Level3_Term1 }}</td>
+              </tr>
+              <tr>
+                <td>Level3 Term2 </td>
+                <td>{{ row.Level3_Term2 }}</td>
+              </tr>
+              <tr>
+                <td>Level4 Term1 </td>
+                <td>{{ row.Level4_Term1 }}</td>
+              </tr>
+              <tr>
+                <td>Level4 Term2 </td>
+                <td>{{ row.Level4_Term2 }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+{% endblock %}

@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.header {
+  margin-bottom:80px ;
+  width: 100%;
+  height: 100px;
+  background-size: cover;
+  background-color: #4bacf63b;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+nav img{
+  height: 60px;
+  margin-left: 70px;
+  margin-right: 0;
+  mix-blend-mode: multiply;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: inherit;
+  color: #00315ee2;
+  padding: 5px;
+  margin-right: 450px;
+}
+
+nav a {
+  text-decoration: none;
+}
+nav ul {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 17px;
+  outline: none;
+  color: #00315ef4;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  position: relative;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #040007e2;
+  border-radius: 4px;
+  background-color: #4bacf681;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #00315ef4;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+}
+
+/* Add a background color to navbar links on hover */
+.dropdown:hover .dropbtn {
+  background-color: #4bacf681;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(208, 212, 215, 0.47);
+  z-index: 5;
+  display: none;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #00315ee2;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #d9dfe3;
+}
+
+
+/*body Section */
+.section {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer Section */
+footer{
+  background: #999da0;
+  width: 100%;
+  height: 107px;
+  padding: 40px 0;
+  margin-top: 20px;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.copyright-text p span {
+  font-weight: bold;
+}

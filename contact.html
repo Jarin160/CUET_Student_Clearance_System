@@ -1,0 +1,40 @@
+{% extends "nav.html" %}
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='form.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <form action="">
+        <fieldset>
+                <h3>CONTACT US</h3>
+            <div class="row">
+                <div class="col">
+                    <div class="col1">
+                        <label for="name">Student Name: </label><br>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="col1">
+                        <label for="id">Student ID: </label><br>
+                        <input type="number" id="id" name="id" required>
+                    </div>
+                    <div class="col1">
+                        <label for="session">Session: </label><br>
+                        <input type="text" id="session" name="session" required>
+                    </div>
+                    <div class="col1">
+                        <label for="dept">Name of Department: </label><br>
+                        <input type="text" id="dept" name="dept" required>
+                    </div>
+                </div>
+            <div class="textar">
+                <label for="message">Enter the Descriptions: </label> <br>
+                <textarea name="message" id="message" rows="10" cols="15"></textarea><br><br>
+            </div>
+            <div>
+                <button type="submit"> Submit</button> <br>
+            </div>
+        </fieldset>
+    </form>
+</div>
+{% endblock %}

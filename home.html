@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Index </title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+	<div align="center">
+		<div class="wrapper">
+			<i class='bx bxs-graduation'></i>
+			<h1>Student Portal</h1>
+			<div class="button-row">
+				<nav>
+					<button type="submit"><a href="{{ url_for('register') }}">Register</a></button>
+					<button type="submit"><a href="{{ url_for('login') }}">Login</a></button>
+				</nav>
+			</div>
+		</div>
+		</h1></br></br></br>
+		<a href="{{ url_for('logout') }}" class="btn">Logout</a>
+	</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+{% extends "nav.html" %}
+{% block head %} 
+    <link rel="stylesheet" href="{{url_for('static', filename='form.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="head">
+            <h2>Application</h2>
+        </div>
+        <form action="">
+            <fieldset>
+                <legend><img src="{{url_for('static', filename='cuet-logo.jpg') }}" alt=""></legend>
+                <h3>Application for</h3>
+
+                    <div class="checkbox">
+                        <div><input type="checkbox" id="mig" name="options" value="mig" checked>
+                            <label for="mig">Migrattion Certificate</label>
+                        </div>
+                        <div><input type="checkbox" id="moi" name="options" value="moi">
+                            <label for="moi">Medium of Instruction Certificate</label>
+                        </div>
+                        <div><input type="checkbox" id="gcc" name="options" value="gcc">
+                            <label for="gcc">Grade Conversion Certificate</label>
+                        </div>
+                        <div><input type="checkbox" id="cdc" name="options" value="cdc">
+                            <label for="cdc">Course Duration Certificate</label>
+                        </div>
+                    </div>
+
+                <div class="row">
+                    <label for="img">1. Upload Your Photo (.jpg/.png): </label><br>
+                    <input type="file" id="img" name="img" accept=".jpg,.jpeg,.png">
+                </div>
+                <div class="row">
+                    <label for="name">2. Name of Student: </label><br>
+                    <input type="text" id="name" name="name">
+                </div> 
+                <div class="row">
+                    <div class="col">
+                        <div class="col1">
+                            <label for="id">3. Student ID: </label><br>
+                            <input type="number" id="id" name="id" required>
+                        </div>
+                        <div class="col1">
+                            <label for="session">4. Session: </label><br>
+                            <input type="text" id="session" name="session" required>
+                        </div>
+                        <div class="col1">
+                            <label for="dept">5. Name of Department: </label><br>
+                            <input type="text" id="dept" name="dept" required>
+                        </div>
+                        <div class="col1">
+                            <label for="cgpa">6. Average Grade Point: </label><br>
+                            <input type="number" id="cgpa" name="cgpa" required>
+                        </div>
+                        <div class="col1">
+                            <label for="result">7. Date of Result: </label><br>
+                            <input type="month" id="result" name="result" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <label class="payment">Payment Method:</label>
+                    <div><input type="radio" id="bkash" name="payment" value="bsc" checked>
+                        <label for="bkash">bKash</label>
+                    </div>
+                    <div><input type="radio" id="nagad" name="payment" value="nagad">
+                        <label for="nagad">Nagad</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="trx">8. Transaction ID: </label><br>
+                    <input type="text" id="trx" name="trx" required>
+                </div>
+                <div>
+                    <button type="submit"> Next Page </button> <br>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+{% endblock %}
